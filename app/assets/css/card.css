@@ -1,0 +1,30 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card .header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 10% 90%;
+    height: 45px;
+    background-color: #438A9C;
+    color: #ffffff;
+    align-items: center;
+    padding: 0px 10px;
+}
+.card .header .icon img{
+    height: 16px;
+    width: auto;
+}
+
+.card .header .heading{
+    justify-self: center;
+    padding-right: 20px;
+}
+
+.card .content{
+    background-color: #ffffff;
+    height: 100%;
+}

@@ -1,0 +1,22 @@
+<div class="card" ng-controller="transferAmountCtrl as transferAmount">
+    <div class="header">
+        <div class="icon">
+            <img src="./assets/icons/arrows.png" />
+        </div>
+        <div class="heading">Make a Transfer</div>
+    </div>
+    <div class="content">
+        <form name="transferForm" class="transfer" validate>
+            <label>From Account</label>
+            <input type="text" placeholder="Free Checking(4692) - {{transferAmount.remaining | currency }}" disabled />
+            <label>To Account</label>
+            <input type="text" name="uMerchant" ng-model="transferAmount.merchant" placeholder="Transfer to" required/>
+            <label>Amount</label>
+            <div class="amount">
+                <input type="number" name="uTransferAmount" placeholder="{{0.00 | currency }}" ng-model="transferAmount.amount" remaining-balance required/>
+                <div class="error" ng-show="transferForm.uTransferAmount.$dirty && transferForm.uTransferAmount.$error.validBalance">Invalid Amount</div>
+            </div>
+            <input type="submit" ng-click="transferAmount.transact(transferForm)" value="Submit" ng-disabled="!transferForm.$valid"/>
+        </form>
+    </div>
+</div>

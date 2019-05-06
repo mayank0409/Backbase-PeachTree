@@ -5,9 +5,27 @@
       href="https://fonts.googleapis.com/css?family=Kanit"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/transferAmount.css" />
 
+    <script src="vendor/angular.min.js"></script>
     <script src="app.module.js"></script>
+    <script src="components/transfer-amount/transfer-amount.module.js"></script>
+    <script src="components/transfer-amount/transfer-amount.service.js"></script>
+    <script src="components/transfer-amount/transfer-amount.directive.js"></script>
+    <script src="components/transfer-amount/transfer-amount.controller.js"></script>
+    <script src="components/transfer-amount/transfer-amount.component.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <div class="page-header">
+      <img class="logo" src="../../assets/logo.jpg" />
+    </div>
+    <div class="container">
+      <div class="transfer-card-container">
+          <transfer-amount/>
+      </div>
+  </div>
+  </body>
 </html>
