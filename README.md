@@ -1,1 +1,4 @@
-# mayank0409.github.io
+> #### How to run the application ?
+>
+> 1.  `npm install`
+> 2.  `npm start`

@@ -1,0 +1,21 @@
+{
+  "name": "Peach Tree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mayank Mahajan <mmahajan@xebia.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server ./app",
+    "test": "karma start --single-run"
+  },
+  "devDependencies": {
+    "angular": "^1.7.6",
+    "angular-mocks": "^1.7.6",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-spec-reporter": "^0.0.32",
+    "live-server": "^1.2.1"
+  }
+}
