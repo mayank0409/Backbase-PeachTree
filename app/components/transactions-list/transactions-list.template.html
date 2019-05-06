@@ -1,0 +1,20 @@
+<div class="card" ng-controller="getAllTransactions as getAllTransactionsCtrl">
+    <div class="header">
+        <div class="icon">
+            <img src="./assets/icons/briefcase.png" />
+        </div>
+        <div class="heading">
+            <div>Recent Transactions</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="transactionList">
+            <actions search-placeholder="Search by typing..." filter-click="getAllTransactionsCtrl.filterClick(filter)"
+                selected-filter="{filter: getAllTransactionsCtrl.appliedFilter, ascendingOrder: getAllTransactionsCtrl.appliedFilterSortAscending}"></actions>
+            <div class="transaction-list-container">
+                <transaction ng-repeat="transaction in getAllTransactionsCtrl.transactions | searchTransactions:getAllTransactionsCtrl.searchText | orderBy:getAllTransactionsCtrl.appliedFilter:!getAllTransactionsCtrl.appliedFilterSortAscending" transaction="transaction" />
+            </div>
+
+        </div>
+    </div>
+</div>

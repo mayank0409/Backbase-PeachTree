@@ -1,1 +1,1 @@
-angular.module('peachTreeBank', ['transferAmount']);
+angular.module('peachTreeBank', ['transferAmount','transactionsList']);

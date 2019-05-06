@@ -1,0 +1,14 @@
+<div class="transaction">
+    <div class="categoryCode" ng-style="{'background-color': $ctrl.transaction.categoryCode }"></div>
+    <div>
+        {{$ctrl.transaction.transactionDate | date:'MMM. dd' }}
+    </div>
+    <div class="merchant-logo">
+        <img src={{$ctrl.transaction.merchantLogo}} alt={{$ctrl.transaction.merchant}} />
+    </div>
+    <div class="merchant-name">
+        <div>{{$ctrl.transaction.merchant}}</div>
+        <div>{{$ctrl.transaction.transactionType}}</div>
+    </div>
+    <div class="transaction-amount">{{-$ctrl.transaction.amount | currency}}</div>
+</div>

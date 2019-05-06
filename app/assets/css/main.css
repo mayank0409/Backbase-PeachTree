@@ -40,3 +40,8 @@ body{
     width: 30%;
     height: 40%;
 }
+
+.transaction-list-card-container{
+    width: 60%;
+    height: 90%;
+}

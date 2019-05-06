@@ -1,5 +1,5 @@
 angular.module('transferAmount').factory('ledgerService', function () {
-    const totalBalance = 500;
+    const totalBalance = 1000;
     let remainingBalance = totalBalance;
     return {
         transact: transact,

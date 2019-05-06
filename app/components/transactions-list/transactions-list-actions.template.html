@@ -1,0 +1,12 @@
+<div class="actions-bar" ng-controller="transactionListActions as transactionListCtrl">
+    <div class="search">
+        <input type="text" placeholder={{$ctrl.searchPlaceholder}} ng-model="transactionListCtrl.searchText" />
+        <div ng-show="transactionListCtrl.searchText!=''" ng-click="transactionListCtrl.resetSearch()" class="cancel"></div>
+    </div>
+    <div class="sort">
+        <div>Sort By</div>
+        <button class="button" ng-class="{highlight: transactionListCtrl.shouldHighlightFilter('date', $ctrl.selectedFilter.filter), asceding: $ctrl.selectedFilter.ascendingOrder}" ng-click="$ctrl.filterClick({filter: 'date'})">Date</button>
+        <button class="button" ng-class="{highlight: transactionListCtrl.shouldHighlightFilter('merchant', $ctrl.selectedFilter.filter), asceding: $ctrl.selectedFilter.ascendingOrder}" ng-click="$ctrl.filterClick({filter:'merchant'})">Beneficiary</button>
+        <button class="button"ng-class="{highlight: transactionListCtrl.shouldHighlightFilter('amount', $ctrl.selectedFilter.filter), asceding: $ctrl.selectedFilter.ascendingOrder}"  ng-click="$ctrl.filterClick({filter:'amount'})">Amount</button>
+    </div>
+</div>
