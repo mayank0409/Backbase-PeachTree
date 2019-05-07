@@ -1,0 +1,36 @@
+@media only screen and (max-width: 975px) {
+    body{
+        background-size: auto;
+        background-repeat: repeat;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 4% 8% 0;
+        height: 95%;
+        align-items: center;
+    }
+    .transfer-card-container{
+        margin-bottom: 10%;
+        width:50%;
+    }
+    .transaction-list-card-container{
+        width:100%;
+        margin-bottom: 10%;
+    }
+}
+@media only screen and (max-height: 768px) {
+    .transfer{
+        grid-gap: 5px
+    }
+}
+
+@media only screen and (min-height: 360px) {
+    .transfer-card-container{
+        height: 350px;
+        margin-right: 50px
+    }
+    .transaction-list-card-container{
+        height: 630px;
+    }
+}

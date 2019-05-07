@@ -33,7 +33,7 @@ body{
     display: flex;
     padding: 4% 8% 0;
     height: 95%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .transfer-card-container{
