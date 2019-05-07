@@ -14,7 +14,6 @@
             <div class="transaction-list-container">
                 <transaction ng-repeat="transaction in getAllTransactionsCtrl.transactions | searchTransactions:getAllTransactionsCtrl.searchText | orderBy:getAllTransactionsCtrl.appliedFilter:!getAllTransactionsCtrl.appliedFilterSortAscending" transaction="transaction" />
             </div>
-
         </div>
     </div>
 </div>
