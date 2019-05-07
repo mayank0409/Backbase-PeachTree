@@ -16,8 +16,8 @@ describe('ledgerService service', function() {
     it('should give false for negative amount', function() {
         expect(LedgerService.isValidAmount(-1)).toBeFalsy();
     });
-    it('should give false for amount greater than totalBalance', function() {
-        expect(LedgerService.isValidAmount(1200)).toBeFalsy();
+    it('should give false for amount greater than totalBalance + extraBalance', function() {
+        expect(LedgerService.isValidAmount(1100+500)).toBeFalsy();
     });
     it('should give true for amount less than totalBalance', function() {
         expect(LedgerService.isValidAmount(200)).toBeTruthy();
