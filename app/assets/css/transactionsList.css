@@ -45,15 +45,11 @@
     padding-left: 3%;
 }
 
-.actions-bar .sort .button.highlight{
-    background-color: #438A9C;
-    color: #ffffff;
-}
 .actions-bar .sort .button.highlight::after{
     content: '\25bc';
     font-size: 10px;
     margin-left: 10px;
-    color: #ffffff;
+    color: #656565;
 }
 .actions-bar .sort .button.highlight.asceding::after{
     content: '\25b2';
