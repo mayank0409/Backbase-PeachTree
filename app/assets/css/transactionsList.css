@@ -102,6 +102,7 @@
 .transaction .merchant-logo img{
     height: 70%;
     width: auto;
+    filter: grayscale(); 
 }
 .transaction .merchant-name{
     display: flex;

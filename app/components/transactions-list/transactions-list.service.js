@@ -39,7 +39,7 @@ angular.
         }
         function getList() {
             return new Promise((resolve, reject) => {
-                $http.get('data/transactions.json').then(function success(response) {
+                $http.get('transactions/transactions.json').then(function success(response) {
                     transactions = transformStringAmountToNumber(response.data.data);
                     resolve(transactions);
                 }, function error(error) {
