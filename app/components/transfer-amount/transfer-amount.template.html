@@ -1,22 +1,82 @@
 <div class="card" ng-controller="transferAmountCtrl as transferAmount">
-    <div class="header">
-        <div class="icon">
-            <img src="./assets/icons/arrows.png" />
+  <div class="header">
+    <div class="icon">
+      <img src="./assets/icons/arrows.png" />
+    </div>
+    <div class="heading">Make a Transfer</div>
+  </div>
+  <div class="content">
+    <form name="transferForm" class="transfer" validate>
+      <label>From Account</label>
+      <input
+        type="text"
+        placeholder="Free Checking(4692) - {{
+          transferAmount.remaining | currency
+        }}"
+        disabled
+      />
+      <label>To Account</label>
+      <input
+        type="text"
+        name="uMerchant"
+        ng-model="transferAmount.merchant"
+        placeholder="Transfer to"
+        required
+      />
+      <label>Amount</label>
+      <div class="amount">
+        <input
+          type="number"
+          name="uTransferAmount"
+          placeholder="{{ 0.0 | currency }}"
+          ng-model="transferAmount.amount"
+          remaining-balance
+          required
+        />
+        <div
+          class="error"
+          ng-show="transferForm.uTransferAmount.$dirty && transferForm.uTransferAmount.$error.validBalance"
+        >
+          Invalid Amount
         </div>
-        <div class="heading">Make a Transfer</div>
+      </div>
+      <button
+        type="submit"
+        class="submit-button"
+        data-toggle="modal"
+        data-target="#myModal"
+        ng-disabled="!transferForm.$valid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <h4 class="modal-title">Are you sure you want to transfer ?</h4>
+        </div>
+        <div class="modal-body">
+          <p>Amount: {{ transferAmount.amount }}</p>
+          <p>Merchant: {{ transferAmount.merchant }}</p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="submit"
+            ng-click="transferAmount.transact(transferForm)"
+            class="submit-button"
+            data-dismiss="modal"
+          >
+            Transfer
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="content">
-        <form name="transferForm" class="transfer" validate>
-            <label>From Account</label>
-            <input type="text" placeholder="Free Checking(4692) - {{transferAmount.remaining | currency }}" disabled />
-            <label>To Account</label>
-            <input type="text" name="uMerchant" ng-model="transferAmount.merchant" placeholder="Transfer to" required/>
-            <label>Amount</label>
-            <div class="amount">
-                <input type="number" name="uTransferAmount" placeholder="{{0.00 | currency }}" ng-model="transferAmount.amount" remaining-balance required/>
-                <div class="error" ng-show="transferForm.uTransferAmount.$dirty && transferForm.uTransferAmount.$error.validBalance">Invalid Amount</div>
-            </div>
-            <input type="submit" ng-click="transferAmount.transact(transferForm)" value="Submit" ng-disabled="!transferForm.$valid"/>
-        </form>
-    </div>
+  </div>
 </div>

@@ -17,7 +17,8 @@ body{
 .page-header{
     display: flex;
     align-items: center;
-    height: 5%;
+    margin-top: 0;
+    height: 8%;
     padding-left: 4%;
     background-color: #ffffff;
     border-bottom: 2px solid #F1955E;
@@ -31,9 +32,8 @@ body{
 
 .container{
     display: flex;
-    padding: 4% 8% 0;
+    padding: 4% 0 0;
     height: 95%;
-    /* justify-content: space-between; */
 }
 
 .transfer-card-container{
