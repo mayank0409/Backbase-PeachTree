@@ -54,3 +54,7 @@
 .transfer input[type="submit"]:hover{
     cursor: pointer;
 }
+
+input[type="text"]:disabled, button[type="submit"]:disabled{
+    cursor: not-allowed;
+}
