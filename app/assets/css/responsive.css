@@ -1,20 +1,23 @@
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
     .transfer-card-container{
         width: 30%;
-        height: 30%;
+        height: 350px;
         margin-right: 50px;
     }
 
     .transaction-list-card-container{
-        width: 60%;
-        height: 55%;
+        width: auto;
+        height: 600px;
     }
 }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) { 
+    transfer-card-container{
+        height: 350px;
+    }
     .transfer-card-container{
         width: 30%;
-        height: 52%;
+        height: 600px;
         margin-right: 50px;
     }
 }

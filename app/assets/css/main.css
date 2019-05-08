@@ -38,11 +38,11 @@ body{
 
 .transfer-card-container{
     width: 30%;
-    height: 45%;
+    height: 350px;
     margin-right: 50px;
 }
 
 .transaction-list-card-container{
-    width: 60%;
-    height: 90%;
+    width: 1000px;
+    height: 600px;
 }
