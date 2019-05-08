@@ -1,7 +1,6 @@
 {
   "name": "peachTree",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Mayank Mahajan <mmahajan@xebia.com>",
   "license": "MIT",
   "scripts": {

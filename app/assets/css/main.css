@@ -14,10 +14,6 @@ body{
     background-size: cover;
 }
 
-textarea:disabled, input:disabled {
-    background-color: #fff;
-}
-
 .page-header{
     display: flex;
     align-items: center;
