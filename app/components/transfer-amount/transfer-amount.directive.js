@@ -1,3 +1,5 @@
+// Amount Transfer Directive
+
 angular.module('transferAmount').directive('remainingBalance', ['ledgerService',function (ledgerService) {
     return {
         require: 'ngModel',

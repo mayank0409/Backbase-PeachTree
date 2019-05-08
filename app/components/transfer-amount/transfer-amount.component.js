@@ -1,3 +1,5 @@
+//Amount Transfer Component
+
 angular.module('transferAmount').component('transferAmount', {
         restrict: 'E',
         transclude: true,

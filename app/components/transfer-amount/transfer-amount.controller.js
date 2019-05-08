@@ -1,3 +1,5 @@
+// Amount Transfer Controller
+
 angular.module('transferAmount').controller('transferAmountCtrl', ['ledgerService','transactionsService', function (ledgerService,transactionsService) {
     this.remaining = ledgerService.getBalance();
     this.amount = 0;
