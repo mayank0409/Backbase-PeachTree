@@ -2,7 +2,7 @@
 
 How to access the application over web?
 
-  `https://mayank0409.github.io/app/`
+  https://mayank0409.github.io/app/
 
 How to run the application locally?
 
