@@ -17,8 +17,8 @@ How to test the application locally?
 
 # Tools & Technologies used
 
-  - `AngularJS` as I have prior experience of working with Backbase widgets in AngularJS 1.x versions
-  - `Karma & Jasmine` For unit testing the application
+  - `AngularJS v1.7.6` as I have prior experience of working with Backbase widgets in AngularJS 1.x versions
+  - `Karma v4.0.0 & Jasmine v3.3.0` For unit testing the application
 
 # Components Created
 
