@@ -13,6 +13,7 @@ How to test the application locally?
 
   - `npm install` to install all the project dependencies **(If not done in the previous step)**
   - `npm test` to start your application locally 
+  **(Currently there are 36 test cases)**
 
 # Tools & Technologies used
 
